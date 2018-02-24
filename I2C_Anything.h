@@ -1,7 +1,7 @@
 
 #include <Arduino.h>
 #include <Wire.h>
-
+//add this file to your library folder
 template <typename T> unsigned int I2C_writeAnything (const T& value)
   {
   Wire.write((byte *) &value, sizeof (value));
